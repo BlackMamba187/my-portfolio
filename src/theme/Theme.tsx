@@ -1,8 +1,14 @@
-
-
 export const Theme = {
-	text: "text-5xl ml-2",
-    solidBd: "",
-	gradientBg: "h-screen w-full bg-gradient-to-b from-sky-500 via-sky-500 to-white-800",
-    reverseGradientBg: "h-screen w-full bg-gradient-to-b from-white via-sky-500 to-white-800",
+	Bg: "h-full w-full md:max-w-[90%] mx-auto ",
+	SdBg: "bg-sky-300",
+	Colour: "bg-sky-500",
+	ColourHex: "#0ea5e9",
+	WhiteHex: "#ffffff",
+	White: "bg-white",
+	BorderWhite: "border-white",
+	Border: "border-sky-500",
+	Text: "text-black-500",
+	TextWhite: "text-white",
+	TextColour: "text-sky-500",
+	SdText: "text-gray-500",
 };

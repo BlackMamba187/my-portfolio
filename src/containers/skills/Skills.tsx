@@ -1,35 +1,69 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { SkillDetails } from "../../data/SkillDetails";
+import { useRecoilValue } from "recoil";
+import { motion } from "framer-motion";
+import { MoreSkills, SkillDetails } from "../../data/SkillDetails";
+import { NavbarOpen } from "../../recoil/Atoms";
 import { Theme } from "../../theme/Theme";
+import { PageAnimation } from "../../theme/Animation";
 
 const Skills = () => {
+	const nav = useRecoilValue(NavbarOpen);
 	return (
-		<div className={Theme.gradientBg}>
-			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-      <div className="mt-20" />
-        <div className="mt-20">
-					<p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-						Experience
-					</p>
-					<p className="py-6">These are the technologies I've worked with</p>
-				</div>
-
-				<div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-					{SkillDetails.map(({ id, child, title, style, link }) => (
-						<Link to={link}>
-							<div
-								key={id}
-								className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg shadow-${style}`}
+		<motion.div
+			initial={PageAnimation.initial}
+			animate={PageAnimation.animate}
+			exit={PageAnimation.exit}
+			transition={PageAnimation.transition}
+		>
+			{!nav && (
+				<div className={Theme.Bg}>
+					<div className="p-4 flex flex-col w-full ">
+						<div className="flex w-full justify-center ">
+							<p
+								className={`${Theme.Border} text-5xl font-bold inline border-b-4 `}
 							>
-								{child}
-								<p className={`text-${style}`}>{title}</p>
-							</div>
-						</Link>
-					))}
+								Skills
+							</p>
+						</div>
+					</div>
+					<div className="p-4 mx-auto flex flex-col justify-center w-full text-center">
+						<p className={` pt-10 pb-20 ${Theme.Text}`}>
+							These are technologies I have used to development modern, interactive products.
+						</p>
+						<div className="w-full h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-y-8 text-center">
+							{SkillDetails.map(({ id, child, title, style, link, text }) => (
+								<a href={link} key={id} className="justify-self-center">
+									<div
+										className={`h-44 w-80 shadow-md hover:scale-105 duration-500 rounded-lg ${Theme.White} border-2 ${style} flex flex-col justify-center`}
+									>
+										{child}
+										<p className={`${text} text-2xl my-1`}>{title}</p>
+									</div>
+								</a>
+							))}
+						</div>
+					</div>
+
+					<div className="p-4 mx-auto flex flex-col justify-center w-full text-center mb-20">
+						<p className={` pt-10 pb-20 ${Theme.Text}`}>
+						These are a list of technologies I want to use to expand my capabiltes for the future.
+						</p>
+						<div className="w-full h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-y-8 text-center">
+							{MoreSkills.map(({ id, child, title, style, link, text }) => (
+								<a href={link} key={id} className="justify-self-center">
+									<div
+										className={`h-44 w-80 shadow-md hover:scale-105 duration-500 rounded-lg ${Theme.White} border-2 ${style} flex flex-col justify-center`}
+									>
+										{child}
+										<p className={`${text} text-2xl my-1`}>{title}</p>
+									</div>
+								</a>
+							))}
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+			)}
+		</motion.div>
 	);
 };
 
