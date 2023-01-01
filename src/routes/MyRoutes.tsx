@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { Footer, Navbar } from "../components";
-import { Landing, About, Skills, Projects } from "../containers";
+import { Landing, About, Skills, Projects, } from "../containers";
 import ProjectDetails from "../containers/projects/ProjectDetails";
 
 const MyRoutes = () => {

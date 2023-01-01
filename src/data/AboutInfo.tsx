@@ -53,47 +53,54 @@ export const AboutEducation = [
 					<li className={`${Theme.TextColour} `}>Maths</li>
 					<div className="p-2 ">
 						<p className="flex flex-col">
-							"Math classes were like watching a foreign movie without
-							subtitles"
+							"Taking math classes in sixth form felt like watching a foreign
+							movie without subtitles"
 						</p>
 
 						<p className="py-2 ">
-							This qoute pretty much summarises my experiences with maths in sixth
-							form.
+							That's how much I struggled with it. However, I was able to
+							persevere and eventually improve my understanding of math
+							concepts."
 						</p>
 					</div>
 				</div>
 				<div className={`py-4`}>
 					<li className={`${Theme.TextColour} `}>Chemistry</li>
 					<p className="p-2">
-						Chemistry is like Lego! Ideas and frameworks can be broken down into
-						smaller pieces and then reassembled in different ways to build
-						something entirely new. You’ll find with each new thing you learn,
-						everything else you’ve learned before makes more and more sense as
-						the concepts all start to piece together.
+						To me, chemistry is like playing with Lego - you can take ideas and
+						frameworks apart, rearrange them in different ways, and build
+						something entirely new. As you learn more and more, everything
+						you've learned before starts to come together and make more sense.
+						It's a fascinating and rewarding field of study.
 					</p>
 				</div>
 				<div className={`py-4`}>
 					<li className={`${Theme.TextColour} `}>Classical Civilisation</li>
 					<div className="p-2">
 						<p>
-							Classical Civilisation is the study of the period of cultural
-							history between the 8th century BC and the 6th century AD centred
-							on the Mediterranean Sea.
+							Classical Civilisation is the study of the cultural history of the
+							Mediterranean region between the 8th century BC and the 6th
+							century AD. It covers a wide range of topics including art,
+							literature, philosophy, politics, and religion from ancient Greek
+							and Roman civilizations.
 						</p>
 						<p className={`pt-8 p-4 font-bold`}> Top 3 Favourite stories</p>
 						<p className={`pb-4 px-4`}>
-							Medea - A greek tradegy about betrayal and vengeance
+							Medea - A greek tradegy that explores complex themes such as love,
+							betrayal, revenge,
 						</p>
 						<p className={`p-4`}>
-							The Odyssey - A epic poem telling the story of the Greek hero
-							Odysseus struggles as he admits to joueny home after Ten years at
-							war
+							The Odyssey - An epic adventure that follows the hero Odysseus on
+							his journey home after the Trojan War. Along the way, he
+							encounters exciting battles, mythological creatures, and
+							unexpected twists and turns. All while dealing with themes of
+							hospitality, loyalty, courage, and the dangers of pride.
 						</p>
 						<p className={`p-4`}>
-							Oedipus - A Greek tragedy about fate and prophecy with the main
-							focus of denying your own destiny only to find out, the more you
-							try you played a part in fueling the prophecy
+							Oedipus - A Greek tragedy that follows the hero Oedipus as he
+							discovers a dark secret about his past that leads to his downfall.
+							It explores themes such as fate, free will, and the consequences
+							of human actions.
 						</p>
 					</div>
 				</div>
@@ -178,15 +185,21 @@ export const AboutWorkExp = [
 				<ul className={`list-disc p-3 ${Theme.Text}`}>
 					<li className="pb-3">
 						{" "}
-						As a Sainsbury's representative, my role was serving customers using
-						the till systems, making sure their shopping was processed, packed,
-						and paid for without unnecessary delays.
+						As a Sainsbury's representative, I was responsible for serving
+						customers at the check-out and ensuring that their shopping
+						experience was smooth and efficient. This included using the till
+						systems to process and pack orders, as well as assisting with
+						payments. I was also trained in customer service best practices and
+						worked to maintain a friendly and helpful attitude towards all
+						customers.
 					</li>
 					<li className="py-3">
-						This role also required me to be engaging and friendly with a
-						variety of different people and because of my excellent customer
-						service I had a 92% overall customer service satisfaction which led
-						to everyone having an enjoyable shopping experience.
+						In this role, I was expected to be engaging and friendly with a
+						diverse group of customers. My strong customer service skills
+						contributed to a 92% overall satisfaction rating, which helped to
+						create an enjoyable shopping experience for all customers. I took
+						pride in providing excellent customer service and enjoyed
+						interacting with people from all walks of life.
 					</li>
 				</ul>
 			</>
@@ -198,7 +211,8 @@ export const AboutWorkExp = [
 			<>
 				<p>
 					Maplin
-					<br /> Customer service assistant
+					<br />
+					Senior Customer service assistant
 					<br />
 				</p>
 			</>
@@ -210,14 +224,23 @@ export const AboutWorkExp = [
 				<ul className={`list-disc p-3 ${Theme.Text}`}>
 					<li className="pb-3">
 						{" "}
-						In this role I combined my extensive IT knowledge and my knowledge
-						of maplin products and services to assist and consult customers on
-						an individual use case.
+						At Maplin, I utilized my extensive knowledge of IT and Maplin
+						products and services to assist and consult customers on their
+						specific needs. I was able to provide personalized recommendations
+						and solutions based on each individual's unique use case, drawing on
+						my technical expertise and product knowledge. My goal was to help
+						customers make informed decisions and find the right products and
+						services to meet their needs.
 					</li>
 					<li className="py-3">
-						I always maintained a positive, empathetic and professional attitude
-						toward customers at all times, to ensure I was giving the best
-						customer possible.
+						In this role, I consistently maintained a positive, empathetic, and
+						professional attitude towards customers in order to provide the best
+						possible service. I recognized the importance of building trust and
+						rapport with customers, and worked to create a friendly and
+						welcoming environment that made them feel comfortable and valued. I
+						also recognized the value of going above and beyond to meet the
+						needs of customers, and always made an effort to exceed their
+						expectations.
 					</li>
 				</ul>
 			</>
@@ -295,28 +318,14 @@ export const Interests = [
 		),
 		ranking: (
 			<>
-				<div className="flex grid grid-cols-2 gap-2 place-content-center">
-					<div>
-						<p className="my-2">My 5 Favourite Current</p>
-						<ul className="list-decimal">
-							<li className="py-1">Israel Adesanya</li>
-							<li className="py-1">kamaru usman</li>
-							<li className="py-1">Amanda Nunes</li>
-							<li className="py-1">Valentina Shevchenko</li>
-							<li className="py-1">Francis Ngannou</li>
-						</ul>
-					</div>
-					<div>
-						<p className="my-2">Top 5 All-time</p>
-						<ul className="list-decimal">
-							<li className="py-1">Jon Jones</li>
-							<li className="py-1">Khabib Nurmagomedov</li>
-							<li className="py-1">Georges St. Pierre</li>
-							<li className="py-1">Anderson Silva</li>
-							<li className="py-1">Demetrious Johnson</li>
-						</ul>
-					</div>
-				</div>
+				<p className="my-2">Top 5 All-time</p>
+				<ul className="list-decimal">
+					<li className="py-1">Jon Jones</li>
+					<li className="py-1">Khabib Nurmagomedov</li>
+					<li className="py-1">Georges St. Pierre</li>
+					<li className="py-1">Anderson Silva</li>
+					<li className="py-1">Demetrious Johnson</li>
+				</ul>
 			</>
 		),
 	},
@@ -466,28 +475,16 @@ export const Interests = [
 			</div>
 		),
 		ranking: (
-			<div className="my-8 flex grid grid-cols-2 gap-2 place-content-center">
-				<div>
-					<p>Top 5 Current Players</p>
-					<ul className="list-decimal">
-						<li className="py-1">Giannis Antetokounmpo</li>
-						<li className="py-1">Luka Dončić</li>
-						<li className="py-1">Stephen Curry</li>
-						<li className="py-1">Nikola Jokic</li>
-						<li className="py-1">Joel Embiid</li>
-					</ul>
-				</div>
-				<div>
-					<p>Top 5 All-time</p>
-					<ul className="list-decimal">
-						<li className="py-1">Michael Jordan</li>
-						<li className="py-1">LeBron James</li>
-						<li className="py-1">Kobe Bryant</li>
-						<li className="py-1">Stephen Curry</li>
-						<li className="py-1">Shaquille O’Neal</li>
-					</ul>
-				</div>
-			</div>
+			<>
+				<p className="my-2">Top 5 All time</p>
+				<ul className="list-decimal">
+					<li className="py-1">Michael Jordan</li>
+					<li className="py-1">LeBron James</li>
+					<li className="py-1">Kobe Bryant</li>
+					<li className="py-1">Stephen Curry</li>
+					<li className="py-1">Shaquille O’Neal</li>
+				</ul>
+			</>
 		),
 	},
 	{

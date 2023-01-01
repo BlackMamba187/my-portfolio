@@ -12,10 +12,7 @@ import {
 } from "../../theme/Animation";
 import { Theme } from "../../theme/Theme";
 import { Button } from "../../components";
-import Recoil from "../../data/Icons/Recoil.png";
-import { FaAws, FaGithub, FaReact } from "react-icons/fa";
-import { GrGraphQl } from "react-icons/gr";
-import { SiTypescript } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
 	const [show, setShow] = useState(0);
@@ -48,18 +45,22 @@ const Projects = () => {
 										<div className="hidden xl:block">
 											{id % 2 === 0 ? (
 												<div className="flex w-full justify-around my-40">
-													<div className="w-[40rem] h-[25rem]">
-														<Tilt scale={1.1}>
-															<img
-																src={src}
-																alt={title}
-																className="rounded-2xl mx-auto "
-															/>
-														</Tilt>
-													</div>
+													<Tilt
+														scale={1.1}
+														tiltAngleXInitial={0}
+														tiltAngleYInitial={-20}
+													>
+														<img
+															src={src}
+															alt={title}
+															className="rounded-2xl mx-auto h-full w-full border-4 border-sky-500 max-h-[25rem] rounded-2xl"
+														/>
+													</Tilt>
 
 													<div className="h-[25rem] w-[40rem] flex flex-col justify-between">
-														<p className={`text-4xl font-bold ${Theme.Text}`}>
+														<p
+															className={`text-4xl font-bold ${Theme.TextColour}`}
+														>
 															{title}
 														</p>
 														<div className="my-2">{description}</div>
@@ -91,7 +92,9 @@ const Projects = () => {
 											) : (
 												<div className="flex w-full justify-around my-40">
 													<div className="h-[25rem] w-[40rem] flex flex-col justify-between">
-														<p className={`text-4xl font-bold ${Theme.Text}`}>
+														<p
+															className={`text-4xl font-bold ${Theme.TextColour}`}
+														>
 															{title}
 														</p>
 														<div className="my-2">{description}</div>
@@ -119,19 +122,22 @@ const Projects = () => {
 															</a>
 														</div>
 													</div>
-													<div className="w-[40rem] h-[25rem]">
-														<Tilt scale={1.1}>
+													<div className="">
+														<Tilt
+															scale={1.1}
+															tiltAngleXInitial={0}
+															tiltAngleYInitial={20}
+														>
 															<img
 																src={src}
 																alt={title}
-																className="rounded-2xl mx-auto "
+																className="rounded-2xl mx-auto h-full w-full border-4 border-sky-500 max-h-[25rem] rounded-2xl"
 															/>
 														</Tilt>
 													</div>
 												</div>
 											)}
 										</div>
-
 										<div className="block xl:hidden">
 											<div className="flex flex-col items-center w-full my-10">
 												<b className="lg:text-4xl text-4xl my-8 text-sky-400">
@@ -140,33 +146,35 @@ const Projects = () => {
 												<Tilt gyroscope={true} className="">
 													<img
 														src={src}
-														className="rounded-lg w-full my-6"
+														className="rounded-2xl h-[12em] sm:h-[20em] w-full my-6 border-4 border-sky-500"
 														alt={title}
 													/>
 												</Tilt>
-												<div className="flex row justify-around w-full">
-													{techStack}
-												</div>
-												<div className="text-center ">
-													<div className="grid grid-cols-2 gap-2">
-														<Link className={``} to={`/projects/${id}`}>
-															<Button
-																action={undefined}
-																text="More!"
-																state={true}
-																width=""
-															/>
-														</Link>
-														<a href={link} className={``}>
-															<Button
-																action={undefined}
-																text="Code!"
-																state={false}
-																width=""
-															/>
-														</a>
+												<div style={{ maxWidth: "500px" }}>
+													<div className="flex row justify-around w-full">
+														{techStack}
 													</div>
-													<div className="py-2">{description}</div>
+													<div className="text-center ">
+														<div className="grid grid-cols-2 gap-2">
+															<Link className={``} to={`/projects/${id}`}>
+																<Button
+																	action={undefined}
+																	text="More!"
+																	state={true}
+																	width=""
+																/>
+															</Link>
+															<a href={link} className={``}>
+																<Button
+																	action={undefined}
+																	text="Code!"
+																	state={false}
+																	width=""
+																/>
+															</a>
+														</div>
+														<div className="py-2">{description}</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -186,13 +194,22 @@ const Projects = () => {
 						{SmallProjectInfo.map(({ id, src, video, title, link }) => (
 							<div key={id}>
 								<div className="text-center my-10 ">
-									<a className="flex justify-center">
+									<div className="flex justify-center">
+										<div
+											onClick={() => setShow(id)}
+											className="hidden md:flex absolute h-44 w-80 bg-sky-600 rounded-lg opacity-0 hover:opacity-70 ease-in duration-300 cursor-pointer justify-center items-center"
+										>
+											<h5 className="text-lg text-white my-4 ">
+												Click for More
+											</h5>
+										</div>
 										<img
 											src={src}
-											className="h-44 w-80 rounded-lg cursor-pointer"
+											alt={title}
+											className="h-44 w-80 rounded-lg border-4 border-sky-500"
 											onClick={() => setShow(id)}
 										/>
-									</a>
+									</div>
 									<h5 className="text-lg font-bold my-4">{title}</h5>
 								</div>
 

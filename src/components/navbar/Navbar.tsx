@@ -80,7 +80,7 @@ const Navbar = () => {
 			<div className="w-full h-[10rem] overflow-hidden">
 				<svg
 					id="svg"
-					className={`relative w-[800%] h-[100%] z-10 md:animate-wave top-[0%]`}
+					className={`relative w-[800%] h-[100%] z-10 md:animate-wave top-[-1%]`}
 					preserveAspectRatio="none"
 					viewBox="0 0 1440 500"
 					xmlns="http://www.w3.org/2000/svg"

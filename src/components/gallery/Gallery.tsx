@@ -15,45 +15,47 @@ const Gallery = ({ id }: Props) => {
 	let activeIndex = current - 1;
 
 	return (
-		<div className="h-full w-full">
-			<div className="flex row justify-between w-full h-full">
-				<div className="xl:block hidden w-full">
-					<div className="h-[50rem] grid ">
-						<AnimatePresence>
-							{!Pic[activeIndex].video ? (
-								<>
-									<motion.img
-										initial={ModalAnimation.initial}
-										animate={ModalAnimation.animate}
-										exit={ModalAnimation.exit}
-										className="place-self-center rounded-2xl h-full "
-										src={Pic[activeIndex].image1}
-										key={current}
-									/>
-								</>
-							) : (
-								<>
-									<motion.video
-										initial={ModalAnimation.initial}
-										animate={ModalAnimation.animate}
-										exit={ModalAnimation.exit}
-										className="place-self-center rounded-2xl h-full"
-										src={Pic[activeIndex].video1}
-										autoPlay
-										loop
-										key={current}
-									/>
-								</>
-							)}
-						</AnimatePresence>
-					</div>
+		<div className="mb-32">
+			<div className="flex xl:flex-row flex-col justify-center items-center">
+				<div className="h-[25em] xl:h-[50em] 2xl:h-[50em]  w-full grid bg-gray-200 xl:m-8 m-0 xl:p-4 p-2 rounded-2xl">
+					<AnimatePresence>
+						{!Pic[activeIndex].video ? (
+							<>
+								<motion.img
+									initial={ModalAnimation.initial}
+									animate={ModalAnimation.animate}
+									exit={ModalAnimation.exit}
+									className="place-self-center rounded-2xl h-full"
+									src={Pic[activeIndex].image1}
+									key={current}
+								/>
+							</>
+						) : (
+							<>
+								<motion.video
+									initial={ModalAnimation.initial}
+									animate={ModalAnimation.animate}
+									exit={ModalAnimation.exit}
+									className="place-self-center rounded-2xl h-full"
+									src={Pic[activeIndex].video1}
+									autoPlay
+									loop
+									key={current}
+									
+								/>
+							</>
+						)}
+					</AnimatePresence>
 				</div>
-				<div className="xl:h-[50rem] grid ">
+
+				<div className="xl:h-[50em] h-full grid xl:my-0 my-4 ">
 					<motion.div className="overflow-scroll scrollbar-none flex xl:flex-col row">
 						{Pic.map((image, index) => {
 							return (
 								<img
-									className="xl:h-[8rem] sm:h-[25rem] h-[15rem] xl:w-[15rem] cursor-pointer rounded-2xl xl:my-1 xl:mx-0 mx-2"
+									className={`place-self-center w-[8rem] h-[5rem] md:h-full xl:w-full xl:h-[10rem] cursor-pointer rounded-2xl xl:my-1 xl:mx-0 mx-2 border-4 border-sky-500 ${
+										activeIndex === index ? "border-red-500" : "border-sky-500"
+									} `}
 									key={image.number}
 									src={image.image1}
 									alt=""
@@ -65,7 +67,7 @@ const Gallery = ({ id }: Props) => {
 				</div>
 			</div>
 
-			<div className=" my-4 xl:mb-20 text-center">
+			<div className=" my-4 text-center">
 				<p>{Pic[activeIndex].imageDescription}</p>
 			</div>
 		</div>

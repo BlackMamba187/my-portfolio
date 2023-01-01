@@ -1,16 +1,11 @@
 import React from "react";
 import { Theme } from "../../theme/Theme";
-import { Link, useParams } from "react-router-dom";
+import {useParams } from "react-router-dom";
 import { Gallery } from "../../components";
 import { useRecoilValue } from "recoil";
-import Recoil from "../../data/Icons/Recoil.png";
 import { motion } from "framer-motion";
 import { NavbarOpen } from "../../recoil/Atoms";
 import { PageAnimation } from "../../theme/Animation";
-import { FaAws, FaGithub, FaReact } from "react-icons/fa";
-import { GrGraphQl } from "react-icons/gr";
-import { SiTypescript } from "react-icons/si";
-import Firebase from "../../data/Icons/firebase.png";
 
 const ProjectDetails = () => {
 	const params = useParams();
@@ -50,7 +45,7 @@ const ProjectDetails = () => {
 											</p>
 										</div>
 										<p
-											className={`${Theme.Border} xl:-rotate-45 xl:absolute my-1 text-red-500 text-2xl font-bold z-20 text-center animate-pulse`}
+											className={`${Theme.Border} my-1 text-red-500 text-2xl font-bold z-20 text-center animate-pulse`}
 										>
 											Currently working on!
 										</p>
@@ -67,7 +62,9 @@ const ProjectDetails = () => {
 												Ecommerce site
 											</p>
 										</div>
-										<Gallery id={2} />
+										
+											
+										<Gallery id={3} />
 									</div>
 								);
 							default:

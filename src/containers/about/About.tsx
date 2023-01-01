@@ -75,7 +75,6 @@ const About = () => {
 						<div className=" p-4 flex flex-col justify-center w-full">
 							{show === 1 && (
 								<div>
-									
 									<ol
 										className={`${Theme.Border} border-l md:border-l-0 md:border-t md:flex md:justify-center md:gap-6 my-8`}
 									>
@@ -133,6 +132,12 @@ const About = () => {
 							)}
 							{show === 3 && (
 								<div className="">
+									<p className="text-center text-xl">
+										{" "}
+										I'm excited to share my interests and hobbies. To get more
+										information, simply hover over the
+										gifs.
+									</p>
 									<div className="overflow-y-scroll my-2 scrollbar-none 2xl:grid grid-cols-3 mt-8">
 										{Interests.map(({ id, title, src, intro, ranking }) => (
 											<div key={id}>

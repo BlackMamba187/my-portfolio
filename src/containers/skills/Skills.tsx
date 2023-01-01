@@ -27,8 +27,9 @@ const Skills = () => {
 						</div>
 					</div>
 					<div className="p-4 mx-auto flex flex-col justify-center w-full text-center">
-						<p className={` pt-10 pb-20 ${Theme.Text}`}>
-							These are technologies I have used to development modern, interactive products.
+						<p className={`lg:text-2xl text-xl pt-10 pb-20 ${Theme.Text}`}>
+							I have utilized the following technologies to develop modern,
+							interactive products
 						</p>
 						<div className="w-full h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-y-8 text-center">
 							{SkillDetails.map(({ id, child, title, style, link, text }) => (
@@ -45,8 +46,10 @@ const Skills = () => {
 					</div>
 
 					<div className="p-4 mx-auto flex flex-col justify-center w-full text-center mb-20">
-						<p className={` pt-10 pb-20 ${Theme.Text}`}>
-						These are a list of technologies I want to use to expand my capabiltes for the future.
+						<p className={`lg:text-2xl text-xl pt-10 pb-20 ${Theme.Text}`}>
+							In order to expand my capabilities and stay current in the
+							industry, I am interested in learning and using the following
+							technologies in the future
 						</p>
 						<div className="w-full h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-y-8 text-center">
 							{MoreSkills.map(({ id, child, title, style, link, text }) => (

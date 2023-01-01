@@ -118,10 +118,10 @@ export const SkillDetails = [
 		link: "https://recoiljs.org/",
 	},{
 		id: 10,
-		title: "Nextjs",
+		title: "Next.js",
 		child: (
 			<div className="flex justify-center">
-				<img src={Nextjs} alt="Recoil" width="100" />{" "}
+				<img src={Nextjs} alt="Recoil" width="150" />{" "}
 			</div>
 		),
 		style: "border-[#000000]",
