@@ -11,7 +11,7 @@ import { GrGraphQl } from "react-icons/gr";
 export const SkillDetails = [
 	{
 		id: 1,
-		title: "Reactjs",
+		title: "ReactJS",
 		child: (
 			<div className="flex justify-center">
 				<FaReact size={100} color="#61dbfb" />

@@ -218,7 +218,7 @@ export const ProjectInfo = [
 	{
 		id: 3,
 		src: eccomerce1,
-		title: "Eccomerce Site",
+		title: "E-ccomerce Site",
 		description: (
 			<p
 				className={`lg:text-xl text-base py-4 ${Theme.Text}`}
