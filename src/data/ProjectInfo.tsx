@@ -248,7 +248,7 @@ export const ProjectInfo = [
 				</div>
 			</>
 		),
-		link: "https://github.com/BlackMamba187/my-game",
+		link: "https://github.com/BlackMamba187/ecommerce",
 		images: [
 			{
 				number: "a",

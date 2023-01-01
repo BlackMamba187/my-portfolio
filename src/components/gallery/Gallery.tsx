@@ -15,7 +15,7 @@ const Gallery = ({ id }: Props) => {
 	let activeIndex = current - 1;
 
 	return (
-		<div className="mb-32">
+		<div className="mb-16">
 			<div className="flex xl:flex-row flex-col justify-center items-center">
 				<div className="h-[25em] xl:h-[50em] 2xl:h-[50em]  w-full grid bg-gray-200 xl:m-8 m-0 xl:p-4 p-2 rounded-2xl">
 					<AnimatePresence>
