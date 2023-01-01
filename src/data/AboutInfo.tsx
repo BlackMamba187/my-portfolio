@@ -4,7 +4,6 @@ import Travel from "../data/Interests/Travel.mp4";
 import Basketball from "../data/Interests/Basketball.mp4";
 import PCBuilding from "../data/Interests/PCBuilding.mp4";
 import { Theme } from "../theme/Theme";
-import ReactCountryFlag from "react-country-flag";
 
 export const AboutEducation = [
 	{
@@ -60,7 +59,7 @@ export const AboutEducation = [
 						<p className="py-2 ">
 							That's how much I struggled with it. However, I was able to
 							persevere and eventually improve my understanding of math
-							concepts."
+							concepts.
 						</p>
 					</div>
 				</div>
@@ -189,16 +188,20 @@ export const AboutWorkExp = [
 						customers at the check-out and ensuring that their shopping
 						experience was smooth and efficient. This included using the till
 						systems to process and pack orders, as well as assisting with
-						payments. I was also trained in customer service best practices and
-						worked to maintain a friendly and helpful attitude towards all
-						customers.
+						payments.
+					</li>
+					<li className="py-3">
+						I was also trained in customer service best practices and worked to
+						maintain a friendly and helpful attitude towards all customers.
 					</li>
 					<li className="py-3">
 						In this role, I was expected to be engaging and friendly with a
 						diverse group of customers. My strong customer service skills
 						contributed to a 92% overall satisfaction rating, which helped to
-						create an enjoyable shopping experience for all customers. I took
-						pride in providing excellent customer service and enjoyed
+						create an enjoyable shopping experience for all customers.
+					</li>
+					<li className="py-3">
+						I took pride in providing excellent customer service and enjoyed
 						interacting with people from all walks of life.
 					</li>
 				</ul>
@@ -226,21 +229,26 @@ export const AboutWorkExp = [
 						{" "}
 						At Maplin, I utilized my extensive knowledge of IT and Maplin
 						products and services to assist and consult customers on their
-						specific needs. I was able to provide personalized recommendations
-						and solutions based on each individual's unique use case, drawing on
-						my technical expertise and product knowledge. My goal was to help
-						customers make informed decisions and find the right products and
-						services to meet their needs.
+						specific needs.
+					</li>
+					<li className="py-3">
+						I was able to provide personalized recommendations and solutions
+						based on each individual's unique use case, drawing on my technical
+						expertise and product knowledge. My goal was to help customers make
+						informed decisions and find the right products and services to meet
+						their needs.
 					</li>
 					<li className="py-3">
 						In this role, I consistently maintained a positive, empathetic, and
 						professional attitude towards customers in order to provide the best
-						possible service. I recognized the importance of building trust and
-						rapport with customers, and worked to create a friendly and
-						welcoming environment that made them feel comfortable and valued. I
-						also recognized the value of going above and beyond to meet the
-						needs of customers, and always made an effort to exceed their
-						expectations.
+						possible service.
+					</li>
+					<li className="py-3">
+						I recognized the importance of building trust and rapport with
+						customers, and worked to create a friendly and welcoming environment
+						that made them feel comfortable and valued. I also recognized the
+						value of going above and beyond to meet the needs of customers, and
+						always made an effort to exceed their expectations.
 					</li>
 				</ul>
 			</>
@@ -319,7 +327,7 @@ export const Interests = [
 		ranking: (
 			<>
 				<p className="my-2">Top 5 All-time</p>
-				<ul className="list-decimal">
+				<ul className="">
 					<li className="py-1">Jon Jones</li>
 					<li className="py-1">Khabib Nurmagomedov</li>
 					<li className="py-1">Georges St. Pierre</li>
@@ -345,7 +353,7 @@ export const Interests = [
 		ranking: (
 			<>
 				<p className="my-2">Top 5 Favourite Games</p>
-				<ul className="list-decimal">
+				<ul className="">
 					<li className="py-1">Pokemon Emerald</li>
 					<li className="py-1">Dark Souls I</li>
 					<li className="py-1">Divinity: Orginal Sin 2</li>
@@ -372,89 +380,41 @@ export const Interests = [
 			<>
 				<p className="my-4">The list of crountries I've been too are below:</p>
 				<div className="flex grid grid-cols-2 place-content-center">
-					<ul className="list-disc">
+					<ul className="">
 						<li className="p-2 bg-sky-500 text-white rounded-l-lg">
 							Uganda{" "}
-							<ReactCountryFlag
-								countryCode="UG"
-								className="px-1"
-								style={{
-									fontSize: "2.4em",
-								}}
-							/>
+							
 						</li>
 						<li className="p-2">
 							Thailand{" "}
-							<ReactCountryFlag
-								countryCode="TH"
-								className="px-1"
-								style={{
-									fontSize: "2.4em",
-								}}
-							/>
+							
 						</li>
 						<li className="p-2 bg-sky-500 text-white rounded-l-lg">
 							Malaysia{" "}
-							<ReactCountryFlag
-								countryCode="MY"
-								className="px-1"
-								style={{
-									fontSize: "2.4em",
-								}}
-							/>
+							
 						</li>
 						<li className="p-2">
 							India{" "}
-							<ReactCountryFlag
-								countryCode="IN"
-								className="px-1"
-								style={{
-									fontSize: "2.4em",
-								}}
-							/>
+							
 						</li>
 					</ul>
-					<ul className="list-disc">
+					<ul className="">
 						<li className="p-2 bg-sky-500 text-white rounded-r-lg">
 							Singapore{" "}
-							<ReactCountryFlag
-								countryCode="SG"
-								className="px-1 "
-								style={{
-									fontSize: "2.4em",
-								}}
-							/>
+							
 						</li>
 						<li className="p-2">
 							Italy{" "}
-							<ReactCountryFlag
-								countryCode="IT"
-								className="px-1"
-								style={{
-									fontSize: "2.4em",
-								}}
-							/>
+							
 						</li>
 
 						<li className="p-2 bg-sky-500 text-white rounded-r-lg">
 							Japan{" "}
-							<ReactCountryFlag
-								countryCode="JP"
-								className="px-1"
-								style={{
-									fontSize: "2.4em",
-								}}
-							/>
+							
 						</li>
 						<li className="p-2">
 							Turkey{" "}
-							<ReactCountryFlag
-								countryCode="TR"
-								className="px-1"
-								style={{
-									fontSize: "2.4em",
-								}}
-							/>
+							
 						</li>
 					</ul>
 				</div>
@@ -477,7 +437,7 @@ export const Interests = [
 		ranking: (
 			<>
 				<p className="my-2">Top 5 All time</p>
-				<ul className="list-decimal">
+				<ul className="">
 					<li className="py-1">Michael Jordan</li>
 					<li className="py-1">LeBron James</li>
 					<li className="py-1">Kobe Bryant</li>
@@ -504,7 +464,7 @@ export const Interests = [
 			<>
 				<p className="my-1">My current specs are below:</p>
 				<div className="my-1">
-					<ul className="list-disc">
+					<ul className="">
 						<li className="py-1">CPU: i7 7700k</li>
 						<li className="py-1">CPU Cooler: Corsair H100i</li>
 						<li className="py-1">Motherboard: MSI Z270 Motherboard</li>

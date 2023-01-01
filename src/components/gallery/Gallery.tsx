@@ -17,7 +17,7 @@ const Gallery = ({ id }: Props) => {
 	return (
 		<div className="mb-16">
 			<div className="flex xl:flex-row flex-col justify-center items-center">
-				<div className="h-[25em] xl:h-[50em] 2xl:h-[50em]  w-full grid bg-gray-200 xl:m-8 m-0 xl:p-4 p-2 rounded-2xl">
+				<div className="h-[25em] xl:h-[50em] w-full grid bg-gray-200 xl:m-8 m-0 xl:p-4 p-2 rounded-2xl">
 					<AnimatePresence>
 						{!Pic[activeIndex].video ? (
 							<>
@@ -25,7 +25,7 @@ const Gallery = ({ id }: Props) => {
 									initial={ModalAnimation.initial}
 									animate={ModalAnimation.animate}
 									exit={ModalAnimation.exit}
-									className="place-self-center rounded-2xl h-full"
+									className="place-self-center rounded-2xl h-[20em] xl:h-[45em]"
 									src={Pic[activeIndex].image1}
 									key={current}
 								/>
@@ -36,7 +36,7 @@ const Gallery = ({ id }: Props) => {
 									initial={ModalAnimation.initial}
 									animate={ModalAnimation.animate}
 									exit={ModalAnimation.exit}
-									className="place-self-center rounded-2xl h-full"
+									className="place-self-center rounded-2xl h-[20em] xl:h-[45em]"
 									src={Pic[activeIndex].video1}
 									autoPlay
 									loop
