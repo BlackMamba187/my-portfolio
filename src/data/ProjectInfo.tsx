@@ -178,7 +178,7 @@ export const ProjectInfo = [
 			{
 				number: "a",
 				imageDescription:
-					"This is a screenshot a Demo Town, used for demonstrating and testing purposes design. It is a representation of a typical town, complete with buildings, streets, and other features commonly found in real-life towns.",
+					"This is a screenshot a Demo Town, used for demonstrating and testing design purposes. It is a representation of a typical town, complete with buildings, streets, and other features commonly found in real-life towns.",
 				video: false,
 				image1: game2,
 			},
