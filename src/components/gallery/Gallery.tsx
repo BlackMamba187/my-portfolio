@@ -67,7 +67,7 @@ const Gallery = ({ id }: Props) => {
 				</div>
 			</div>
 
-			<div className=" my-4 text-center">
+			<div className="lg:text-2xl text-xl my-4 text-center">
 				<p>{Pic[activeIndex].imageDescription}</p>
 			</div>
 		</div>
