@@ -147,6 +147,7 @@ const About = () => {
 															<video
 																src={src}
 																autoPlay
+																playsInline
 																loop
 																className="rounded-lg w-[30rem] h-[30rem]"
 															/>
