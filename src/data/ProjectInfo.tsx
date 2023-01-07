@@ -218,15 +218,15 @@ export const ProjectInfo = [
 	{
 		id: 3,
 		src: eccomerce1,
-		title: "E-commerce Site",
+		title: "E-Commerce Site",
 		description: (
 			<p
 				className={`lg:text-xl text-base py-4 ${Theme.Text}`}
 			>
 				Inspired by the buzz surrounding Next.js, I decided to build an
-				e-commerce site using this popular JavaScript framework. Next.js is
+				E-Commerce site using this popular JavaScript framework. Next.js is
 				known for its ability to create fast and scalable web applications,
-				making it an excellent choice for powering an e-commerce site.
+				making it an excellent choice for powering an E-Commerce site.
 			</p>
 		),
 		techStack: (
@@ -253,7 +253,7 @@ export const ProjectInfo = [
 			{
 				number: "a",
 				imageDescription:
-					"This is a demonstration of an e-commerce site built using Next.JS and the React Context API. The demo includes the homepage, a product details page, and a shopping cart drawer. ReactJS is a JavaScript library for building user interfaces and the Context API is a feature of React that allows for the sharing of state and data between components without the need for props drilling. In this e-commerce site, these tools were used to create a seamless and intuitive shopping experience for the user.",
+					"This is a demonstration of an E-Commerce site built using Next.JS and the React Context API. The demo includes the homepage, a product details page, and a shopping cart drawer. ReactJS is a JavaScript library for building user interfaces and the Context API is a feature of React that allows for the sharing of state and data between components without the need for props drilling. In this E-Commerce site, these tools were used to create a seamless and intuitive shopping experience for the user.",
 				video: true,
 				image1: eccomerce1,
 				video1: eccomerce2,
@@ -261,21 +261,21 @@ export const ProjectInfo = [
 			{
 				number: "b",
 				imageDescription:
-					"This is a part of the product details page for an e-commerce site. Please note that the product shown is not a real product and all images used are from Google and have been made transparent for demonstration purposes.",
+					"This is a part of the product details page for an E-Commerce site. Please note that the product shown is not a real product and all images used are from Google and have been made transparent for demonstration purposes.",
 				video: false,
 				image1: eccomerce3,
 			},
 			{
 				number: "c",
 				imageDescription:
-					"This is the add to cart drawer menu for an e-commerce site. The menu is designed to be responsive on various devices and provide a convenient way for users to add items to their shopping cart. When a user adds a product to their cart, the menu will display the updated cart total and give the user the option to view their cart or continue shopping. The add to cart drawer menu is an important feature of an e-commerce site as it allows users to easily add and track the items they wish to purchase.",
+					"This is the add to cart drawer menu for an E-Commerce site. The menu is designed to be responsive on various devices and provide a convenient way for users to add items to their shopping cart. When a user adds a product to their cart, the menu will display the updated cart total and give the user the option to view their cart or continue shopping. The add to cart drawer menu is an important feature of an E-Commerce site as it allows users to easily add and track the items they wish to purchase.",
 				video: false,
 				image1: eccomerce4,
 			},
 			{
 				number: "d",
 				imageDescription:
-					"This e-commerce site is built using Sanity as the back end platform, which allows for easy management of products and website content. With Sanity, it is possible to quickly add new products and make changes to the main products displayed on the header and foot banner of the site.",
+					"This E-Commerce site is built using Sanity as the back end platform, which allows for easy management of products and website content. With Sanity, it is possible to quickly add new products and make changes to the main products displayed on the header and foot banner of the site.",
 				video: false,
 				image1: eccomerce5,
 			},

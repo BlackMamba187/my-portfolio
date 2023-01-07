@@ -48,7 +48,7 @@ const Gallery = ({ id }: Props) => {
 					</AnimatePresence>
 				</div>
 
-				<div className="xl:h-[50em] h-full grid xl:my-0 my-4 ">
+				<div className="xl:h-[50em] grid xl:my-0 my-4 ">
 					<motion.div className="overflow-scroll scrollbar-none flex xl:flex-col row">
 						{Pic.map((image, index) => {
 							return (
@@ -67,7 +67,7 @@ const Gallery = ({ id }: Props) => {
 				</div>
 			</div>
 
-			<div className="lg:text-2xl text-xl my-4 text-center">
+			<div className="lg:text-2xl text-xl my-4">
 				<p>{Pic[activeIndex].imageDescription}</p>
 			</div>
 		</div>

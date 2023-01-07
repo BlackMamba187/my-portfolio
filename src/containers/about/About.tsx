@@ -162,7 +162,7 @@ const About = () => {
 													</div>
 												</div>
 												<div className="block lg:hidden">
-													<div className="flex flex-col items-center p-2 m-2 w-full my-10">
+													<div className="flex flex-col items-center w-full my-10">
 														<b className="lg:text-4xl text-4xl m-2 text-sky-400">
 															{title}
 														</b>
@@ -170,6 +170,7 @@ const About = () => {
 															<video
 																src={src}
 																autoPlay
+																playsInline
 																loop
 																className="rounded-lg "
 															/>

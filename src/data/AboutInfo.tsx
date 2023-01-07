@@ -66,7 +66,7 @@ export const AboutEducation = [
 				<div className={`py-4`}>
 					<li className={`${Theme.TextColour} `}>Chemistry</li>
 					<p className="p-2">
-						To me, chemistry is like playing with Lego - you can take ideas and
+						To me, Chemistry is like playing with Lego - you can take ideas and
 						frameworks apart, rearrange them in different ways, and build
 						something entirely new. As you learn more and more, everything
 						you've learned before starts to come together and make more sense.
@@ -85,7 +85,7 @@ export const AboutEducation = [
 						</p>
 						<p className={`pt-8 p-4 font-bold`}> Top 3 Favourite stories</p>
 						<p className={`pb-4 px-4`}>
-							Medea - A greek tradegy that explores complex themes such as love,
+							Medea - A Greek tradegy that explores complex themes such as love,
 							betrayal, revenge,
 						</p>
 						<p className={`p-4`}>
@@ -197,7 +197,7 @@ export const AboutWorkExp = [
 					<li className="py-3">
 						In this role, I was expected to be engaging and friendly with a
 						diverse group of customers. My strong customer service skills
-						contributed to a 92% overall satisfaction rating, which helped to
+						contributed to a 98% overall satisfaction rating, which helped to
 						create an enjoyable shopping experience for all customers.
 					</li>
 					<li className="py-3">
@@ -227,12 +227,12 @@ export const AboutWorkExp = [
 				<ul className={`list-disc p-3 ${Theme.Text}`}>
 					<li className="pb-3">
 						{" "}
-						At Maplin, I utilized my extensive knowledge of IT and Maplin
+						At Maplin, I utilised my extensive knowledge of IT and Maplin
 						products and services to assist and consult customers on their
 						specific needs.
 					</li>
 					<li className="py-3">
-						I was able to provide personalized recommendations and solutions
+						I was able to provide personalised recommendations and solutions
 						based on each individual's unique use case, drawing on my technical
 						expertise and product knowledge. My goal was to help customers make
 						informed decisions and find the right products and services to meet
@@ -244,11 +244,9 @@ export const AboutWorkExp = [
 						possible service.
 					</li>
 					<li className="py-3">
-						I recognized the importance of building trust and rapport with
+						I recognised the importance of building trust and rapport with
 						customers, and worked to create a friendly and welcoming environment
-						that made them feel comfortable and valued. I also recognized the
-						value of going above and beyond to meet the needs of customers, and
-						always made an effort to exceed their expectations.
+						that made them feel comfortable and valued.
 					</li>
 				</ul>
 			</>
@@ -270,7 +268,7 @@ export const AboutWorkExp = [
 			<>
 				<p className={`${Theme.TextColour} pt-3`}>Main Role</p>
 				<ul className={`list-disc pb-3 ${Theme.Text}`}>
-					<li className="py-2">Experienced in the B2B SAAS support service</li>
+					<li className="py-2">Experienced in the B2B SAAS support service.</li>
 					<li className="py-2">
 						Offering support to users through multiple channels: Phone,
 						LiveChat, Email & Socials.
@@ -284,7 +282,7 @@ export const AboutWorkExp = [
 						app.
 					</li>
 					<li className="py-2">
-						Analysing and Evaluating students progression and skill improvement
+						Analysing and evaluating students progression and skill improvement
 						through daily feedback calls.
 					</li>{" "}
 					<li className="py-2">
@@ -301,7 +299,7 @@ export const AboutWorkExp = [
 						Outbound engagement & experience calls to both users and businesses.
 					</li>
 					<li className="py-2 ">
-						Managing Bug reporting for an application with 50k+ downloads
+						Managing bug reporting for an application with 50k+ downloads.
 					</li>
 				</ul>
 			</>
